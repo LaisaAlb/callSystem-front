@@ -1,6 +1,6 @@
-.container{
+.container {
     height: 100%;
-    background-color: #000D45;
+    background-color: #000d45f4;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,27 +10,52 @@
     width: 25rem;
     height: 70%;
     margin: auto;
-    background-color: #000D45;
+    background-color: #000d459e;
     padding: 4rem 1rem;
     border-radius: 1rem;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
 }
 
-img{
+img {
     height: 400px;
     width: 100%;
-    margin: auto;
+    margin-top: -50px;
 }
-mat-label, input{
+
+mat-label, input {
     color: white;
 }
 
-.full-width{
+.full-width {
     width: 100%;
 }
-button{
-   align-items: center;
-   justify-content: center;
-   background-color: #000D45;
-   color: #FF66C4;
-   margin-top: 5px
+
+button {
+    width: 150px; 
+    margin-top: 5px;
+    background-color: #a4acd2;
+    color: #000d2f;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 5px 0; 
+    border-radius: 0.5rem; 
+    font-weight: bold;
+    font-size: 1.2rem;
+    translate: 0.5s;
 }
+
+button:hover{
+    background-color: #dde2f6;
+}
+
+input::placeholder, mat-form-field input::placeholder {
+    color: white;
+}
+
+input:focus::placeholder, mat-form-field input:focus::placeholder {
+    color: rgb(180, 179, 179); 
+}
+
