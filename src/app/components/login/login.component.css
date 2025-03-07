@@ -1,0 +1,36 @@
+.container{
+    height: 100%;
+    background-color: #000D45;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    width: 25rem;
+    height: 70%;
+    margin: auto;
+    background-color: #000D45;
+    padding: 4rem 1rem;
+    border-radius: 1rem;
+}
+
+img{
+    height: 400px;
+    width: 100%;
+    margin: auto;
+}
+mat-label, input{
+    color: white;
+}
+
+.full-width{
+    width: 100%;
+}
+button{
+   align-items: center;
+   justify-content: center;
+   background-color: #000D45;
+   color: #FF66C4;
+   margin-top: 5px
+}
