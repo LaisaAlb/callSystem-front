@@ -59,3 +59,10 @@ input:focus::placeholder, mat-form-field input:focus::placeholder {
     color: rgb(180, 179, 179); 
 }
 
+
+button:disabled {
+    background-color: #a4acd2a5; 
+    color: #aaa; 
+    cursor: not-allowed; 
+}
+
