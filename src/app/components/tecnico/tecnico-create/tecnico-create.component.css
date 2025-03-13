@@ -9,7 +9,7 @@
     justify-content: center;
     text-align: center;
     flex-direction: column; 
-    box-shadow: #011467 2px 5px 5px 2px;
+    box-shadow: #011155b6 2px 5px 5px 2px;
 }
 
 .fullWidth {
@@ -63,4 +63,13 @@ h1 {
 
 .cancel:hover{
     background-color: rgba(226, 6, 6, 0.888);
+}
+
+mat-icon{
+    opacity: .8;
+}
+
+.add:disabled{
+    background-color: #e0dfdf;
+    color: rgb(177, 177, 177);
 }

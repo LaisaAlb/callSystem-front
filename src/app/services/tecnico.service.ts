@@ -14,5 +14,8 @@ export class TecnicoService {
     return this.http.get<Tecnico[]>('http://localhost:8080/tecnicos') 
   }
 
+  create(tecnico: Tecnico): Observable<Tecnico>{
+    return this.http.post<Tecnico>('http://localhost:8080/tecnicos', tecnico);
+  }
 
 }
