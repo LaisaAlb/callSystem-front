@@ -14,14 +14,13 @@ export class AuthService {
     private http: HttpClient) { }
 
   authenticate(creds: Credenciais) {
-    console.log('Autenticando com as credenciais:', creds); // Log para checar as credenciais
-    // Corrigido o acesso a API_CONFIG.baseUrls
+    console.log('Autenticando com as credenciais:', creds);
     return this.http.post('http://localhost:8080/login', creds, {
       observe: 'response', 
       responseType: 'text'
     }).pipe(
       tap(response => {
-        console.log('Resposta da requisição:', response); // Log da resposta
+        console.log('Resposta da requisição:', response); 
       })
     );
   }

@@ -48,12 +48,12 @@ h1 {
 }
 
 .add {
-    background-color: #000D45;
+    background-color: #ff1e1e;
     color: white;
 }
 
 .cancel {
-    background-color: rgba(250, 5, 5, 0.888);
+    background-color: rgba(0, 0, 0, 0.888);
     color: aliceblue;
 }
 
@@ -62,7 +62,7 @@ h1 {
 }
 
 .cancel:hover{
-    background-color: rgba(226, 6, 6, 0.888);
+    background-color: rgba(169, 169, 169, 0.888);
 }
 
 mat-icon{

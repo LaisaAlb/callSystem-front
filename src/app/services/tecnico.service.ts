@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Tecnico } from '../models/tecnico';
@@ -16,7 +16,8 @@ export class TecnicoService {
   }
 
   findAll(): Observable<Tecnico[]>{
-    return this.http.get<Tecnico[]>('http://localhost:8080/tecnicos') 
+    const headers = new HttpHeaders().set('Authorization', 'Bearer ' + localStorage.getItem('token'))
+    return this.http.get<Tecnico[]>('http://localhost:8080/tecnicos', {headers}) 
   }
 
   create(tecnico: Tecnico): Observable<Tecnico>{
