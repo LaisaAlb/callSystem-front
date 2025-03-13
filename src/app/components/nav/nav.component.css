@@ -24,7 +24,15 @@ img{
 }
 
 .menu {
-    margin: 1rem auto auto 1rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
     color: white;
     background-color: #FF66C4;
 }
+
+.active {
+    background-color: #062f75; 
+    color: white;  
+}
+

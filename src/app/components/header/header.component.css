@@ -5,11 +5,11 @@
 }
 
 h1{
-    margin-top: 1rem;
-    border: 1px solid black;
     color: #FF66C4;
     background-color: #000D45;
     padding: 1rem 5%;
-    border-radius: 2rem;
     font-weight: 900;
+    width: 100%;
+    text-align: center;
+    height: 40px;
 }
