@@ -27,4 +27,8 @@ export class TecnicoService {
     return this.http.put<Tecnico>(`http://localhost:8080/tecnicos/${tecnico.id}`, tecnico);
   }
 
+  delete(id: any): Observable<Tecnico>{
+    return this.http.delete<Tecnico>(`http://localhost:8080/tecnicos/${id}`)
+  }
+
 }
