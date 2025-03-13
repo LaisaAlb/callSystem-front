@@ -30,15 +30,15 @@
   
   mat-form-field {
     font-size: 14px;
-    width: 100%; /* Garantir que o mat-form-field ocupe 100% da largura */
+    width: 100%; 
   }
   
   .search-field {
-    width: 100%; /* Garante que o campo de pesquisa ocupe 100% da largura disponível */
+    width: 100%; 
   }
   
   .edit {
-    color: rgb(0, 153, 255);
+    color: rgb(2, 16, 98);
   }
   
   .delete {
