@@ -8,11 +8,20 @@
     color: #FF66C4;
     background-color: #000D45;
     border-radius: 1rem;
-    font-weight: 900;
+    font-weight: 400;
     width: 250px;
     height: 30px;
     padding: 10px;
+    display: flex;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+  }
+
+  i.material-icons{
+    font-size: 25px;
   }
   
   table {
