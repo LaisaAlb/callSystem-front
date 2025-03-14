@@ -1,0 +1,97 @@
+<div class="container mat-elevation-z8">
+    <form class="form">
+      <h1>Deletar Técnico</h1>
+  
+      <section class="section">
+        <mat-checkbox
+          [disabled]="true"
+          [(ngModel)]="cliente.perfis[0]"
+          name="admin"
+          class="margin"
+          color="primary"
+          >Admin</mat-checkbox
+        >
+        <mat-checkbox
+          [disabled]="true"
+          [(ngModel)]="cliente.perfis[1]"
+          name="cliente"
+          class="margin"
+          color="primary"
+          >Cliente</mat-checkbox>
+  
+        <mat-checkbox
+          [disabled]="true"
+          [(ngModel)]="cliente.perfis[2]"
+          name="tecnico"
+          class="margin"
+          color="primary"
+          >Tecnico</mat-checkbox
+        >
+      </section>
+  
+      <mat-form-field class="fullWidth" appearance="legacy">
+        <mat-label>Nome</mat-label>
+        <input
+          [(ngModel)]="cliente.nome"
+          name="nome"
+          matInput
+          [disabled]="true"
+        />
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      </mat-form-field>
+  
+      <mat-form-field class="fullWidth" appearance="legacy">
+        <mat-label>CPF</mat-label>
+        <input
+          [(ngModel)]="cliente.cpf"
+          name="cpf"
+          matInput
+          [disabled]="true"
+        />
+        <mat-icon matSuffix>pin</mat-icon>
+      </mat-form-field>
+  
+      <mat-form-field class="fullWidth" appearance="legacy">
+        <mat-label>E-mail</mat-label>
+        <input
+          [(ngModel)]="cliente.email"
+          name="email"
+          matInput
+          [disabled]="true"
+        />
+        <mat-icon matSuffix>email</mat-icon>
+      </mat-form-field>
+  
+      <mat-form-field class="fullWidth" appearance="legacy">
+        <mat-label>Senha</mat-label>
+        <input
+          [(ngModel)]="cliente.senha"
+          name="senha"
+          matInput
+          [disabled]="true"
+          type="password"
+        />
+        <mat-icon matSuffix>password</mat-icon>
+      </mat-form-field>
+  
+      <div class="btn">
+        <button
+          (click)="delete()"
+          class="add mat-elevation-z2"
+          mat-flat-button
+          color="primary"
+        >
+          Deletar
+        </button>
+        <button
+          class="cancel mat-elevation-z2"
+          mat-stroked-button
+          color="warn"
+          routerLink="../../"
+        >
+          Cancelar
+        </button>
+      </div>
+    </form>
+  </div>
+  

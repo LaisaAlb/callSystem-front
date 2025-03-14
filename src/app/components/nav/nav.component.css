@@ -17,6 +17,8 @@ img{
 .sidenav a {
     color: white;
     text-decoration: none;
+    translate: 0.5s;
+    cursor: pointer;
 }
 
 .sidenav i {
