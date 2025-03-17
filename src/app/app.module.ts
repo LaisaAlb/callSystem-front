@@ -46,6 +46,7 @@ import { ClienteUpdateComponent } from './components/clientes/cliente-update/cli
 import { ChamadoListComponent } from './components/chamados/chamado-list/chamado-list.component';
 import { ChamadoCreateComponent } from './components/chamados/chamado-create/chamado-create.component';
 import { ChamadoUpdateComponent } from './components/chamados/chamado-update/chamado-update.component';
+import { ChamadoReadComponent } from './components/chamados/chamado-read/chamado-read.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { ChamadoUpdateComponent } from './components/chamados/chamado-update/cha
     ClienteUpdateComponent,
     ChamadoListComponent,
     ChamadoCreateComponent,
-    ChamadoUpdateComponent
+    ChamadoUpdateComponent,
+    ChamadoReadComponent
   ],
   imports: [
     BrowserModule,
