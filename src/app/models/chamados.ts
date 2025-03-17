@@ -4,6 +4,7 @@ export interface Chamado{
     dataFechamento?: string;
     prioridade: string;
     status: string;
+    observacoes: string;
     titulo: string; 
     descricao: string; 
     tecnico: any;
