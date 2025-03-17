@@ -9,8 +9,24 @@
     width: 100%;
 }
 
-h1{
+form{
+    margin-top: 1rem;
+}
+
+h1 {
+    margin: 1rem;
+    margin-bottom: 10px;
+    background-color: #000D45;
+    color: white;
+    width: 100%;
+    max-width: 300px; 
+    border-radius: 0.5rem;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    margin: auto;
 }
 
 .status-prioridade{
@@ -27,7 +43,13 @@ h1{
     max-height: 10rem;
 }
 
-button{
-    margin-top: .5rem;
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem; 
 }
 
+button {
+    margin: 0; 
+    width: 100px;
+}
