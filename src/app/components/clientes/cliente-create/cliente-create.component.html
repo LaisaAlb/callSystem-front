@@ -13,14 +13,12 @@
         <mat-checkbox
           [(ngModel)]="cliente.perfis[1]"
           name="cliente"
-          class="margin"
           color="primary"
           >Tecnico</mat-checkbox
         >
         <mat-checkbox
           [(ngModel)]="cliente.perfis[2]"
           name="cliente"
-          class="margin"
           color="primary"
           >Cliente</mat-checkbox
         >
@@ -34,6 +32,7 @@
           [formControl]="nome"
           required
           matInput
+          appearance="outline"
           placeholder="Ex.. fulano de tal"
         />
         <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
@@ -47,6 +46,8 @@
           [formControl]="cpf"
           required
           matInput
+          appearance="outline"
+          appearance="outline"
           placeholder="Ex..000.000.000-00"
           mask="000.000.000-00"
         />
@@ -61,6 +62,7 @@
           [formControl]="email"
           required
           matInput
+          appearance="outline"
           placeholder="Ex.. fulano@mail.com"
         />
         <mat-icon matSuffix>email</mat-icon>
@@ -75,6 +77,7 @@
           required
           type="password"
           matInput
+          appearance="outline"
           placeholder="Ex.. 1234"
         />
         <mat-icon matSuffix>password</mat-icon>
@@ -86,6 +89,7 @@
           [disabled]="!validaCampos()"
           class="add mat-elevation-z2"
           mat-flat-button
+          appearance="outline"
           color="primary"
         >
           Cadastrar
