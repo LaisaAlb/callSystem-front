@@ -1,27 +1,91 @@
-# CallSystem
+# CallSystem Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.18.
+## Overview
+The **CallSystem Frontend** is an Angular application that serves as the user interface for the CallSystem API. It provides authentication, user management, and an intuitive UI for handling customers, technicians, and service calls.
 
-## Development server
+## Features
+- **CRUD Operations**: Manage customers, technicians, and service calls.
+- **Authentication & Authorization**: Secure login using JWT tokens.
+- **Service Call Management**:
+  - Calls must be linked to a client and a technician.
+  - Calls cannot be deleted.
+- **Angular Material UI** for an enhanced user experience.
+- **Development and Production Modes**.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Tech Stack
+- **Angular** (Latest Version)
+- **Angular Material** (UI Components)
+- **RxJS** (Reactive Programming)
+- **TypeScript** (Strongly Typed Language)
+- **SCSS** (Styling)
 
-## Code scaffolding
+## Installation
+```sh
+# Clone the repository
+git clone https://github.com/your-repo/callsystem-frontend.git
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Navigate to the project folder
+cd callsystem-frontend
 
-## Build
+# Install dependencies
+npm install
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Running the Application
+```sh
+# Development Mode
+ng serve
 
-## Running unit tests
+# Production Build
+ng build --configuration=production
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Environment Configuration
+The environment variables are defined in:
+- `src/environments/environment.ts` (Development)
+- `src/environments/environment.prod.ts` (Production)
 
-## Running end-to-end tests
+Ensure that the API base URL is set correctly for backend communication.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Project Structure
+```
+callSystem/
+├── src/
+│   ├── app/
+│   │   ├── components/    # UI Components
+│   │   ├── services/      # API Calls & Business Logic
+│   │   ├── models/        # Data Models
+│   │   ├── guards/        # Route Guards
+│   │   ├── interceptors/  # HTTP Interceptors
+│   ├── assets/            # Static Files
+│   ├── environments/      # Environment Configurations
+│   ├── styles.css         # Global Styles
+│   ├── main.ts            # Entry Point
+│   ├── index.html         # Root HTML
+```
 
-## Further help
+## Dependencies
+Key dependencies from `angular.json`:
+- **`@angular/material`** - Prebuilt Material UI themes
+- **SCSS** - Styling language
+- **Environment-based Configurations**
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## API Integration
+The frontend communicates with the CallSystem backend using HTTP requests.
+Make sure to update `environment.ts` with the correct API base URL:
+```ts
+export const environment = {
+  production: false,
+  apiUrl: 'http://localhost:8080/api'
+};
+```
+
+## Contribution
+1. Fork the repository.
+2. Create a new branch (`feature-xyz`).
+3. Commit your changes.
+4. Push to the branch and create a pull request.
+
+## License
+MIT License
+
