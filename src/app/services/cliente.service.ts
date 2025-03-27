@@ -20,9 +20,11 @@ export class ClienteService {
     return this.http.get<Cliente[]>('http://localhost:8080/clientes', {headers}) 
   }
 
-  create(cliente: Cliente): Observable<Cliente>{
-    const headers = new HttpHeaders().set('Authorization', 'Bearer ' + localStorage.getItem('token'))
-    return this.http.post<Cliente>('http://localhost:8080/clientes', headers);
+  create(cliente: Cliente): Observable<Cliente> {
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json'
+    });
+    return this.http.post<Cliente>('http://localhost:8080/clientes', cliente, { headers });
   }
 
   update(cliente: Cliente): Observable<Cliente>{
